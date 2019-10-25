@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <title>Form</title>
+</head>
+<style>
+        body{
+        background-color: green;
+    }
+    .main{
+        display: flex;
+        /* border: solid;
+        border-color: solid; */
+        margin-left: 450px;
+        width: 500px;
+        height: 400px;
+
+    }
+    .text{
+        display: flex;
+        flex-flow: column wrap; 
+        padding: 10px; 
+        color: white;
+        
+        
+        font-size: 20px;
+    }
+    .text > label{
+        margin-bottom: 19px;
+        width: 150px;
+    }
+    .inp{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 10px;
+        width: 400px;
+
+    }
+    .inp > .ans{
+        margin-bottom: 12px;
+        border-radius: 6px;
+        height: 25px;
+        background-color: green;
+        color: white;
+    }
+    .inp > .btn{
+        width: 70px;
+        margin-bottom: 6px;
+        border-radius: 6px;
+        height: 25px;
+        background-color: green;
+        color: white;
+    }
+    h1{
+        text-align: center;
+        color: white;
+        font-family: Calibri;
+        margin-top: 200px;
+    }
+</style>
+<body>
+        <h1>Student Record</h1>
+        <div class="main">
+           
+                <div class="text">
+                    <Label> Stdname</Label>
+                    <Label>fathername</Label>
+                    <Label>email</Label>
+                    <Label>mobileno</Label>
+                </div>
+                <form action="RS_Con.php" method="POST">
+                    <div class="inp">
+                        <input class="ans" type="text" name="Name">
+                        <input class="ans" type="text" name="father">
+                        <input class="ans" type="text" name="email">
+                        <input class="ans" type="number" name="phone">
+                        <input class="btn"type="submit" value="Sign in" style=" widows: 15px;">
+                    </div>
+                </form>
+                
+            </div>
+</body>
+</html>
